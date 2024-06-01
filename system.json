@@ -1,0 +1,24 @@
+{
+    "name": "blcr",
+    "title": "battlelords core rules",
+    "description": "120x system",
+    "author": "Eldir_Zildon",
+    "version": 0.01,
+    "minimumCoreVersion": "12.325",
+    "compataibleCoreversion": "12.325",
+    "esmoduels": [
+        "blcr.js"
+    ],
+    "styles": [
+        "blcr.css"
+    ],
+    "packs": [
+
+    ],
+    "languagers": [
+
+    ],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute":  "hp"
+}
