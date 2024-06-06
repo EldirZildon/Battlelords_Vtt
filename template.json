@@ -1,4 +1,58 @@
 {
     "Actor": {},
-    "Item": {}
+    "Item": {
+        "types": [
+            "weapons",
+            "armour"
+        ],
+        "templates": {
+            "desciption":  ""
+        },
+        "Weapons": {
+            "weaponType": "APW",
+            "damage": 0,
+            "ammo": 0,
+            "range1": 0,
+            "range2": 0,
+            "range3": 0,
+            "range4": 0,
+            "range5": 0,
+            "range6": 0,
+            "range7": 0,
+            "range8": 0,
+            "damtype": "0",
+            "MN": 99,
+            "bur": 0,
+            "full": 0,
+            "wgt": 1,
+            "tl": 5
+
+        },
+        "Armor": {
+            "helmT": 5,
+            "rArmT": 5,
+            "lArmT": 5,
+            "rLegT": 5,
+            "lLegT": 5,
+            "torsoT": 5,
+            "helmA": 5,
+            "rArmA": 5,
+            "lArmA": 5,
+            "rLegA": 5,
+            "lLegA": 5,
+            "torsoA": 5,
+            "actWgt": 1,
+            "chem": 30,
+            "cld": 20,
+            "ele": 35,
+            "fir": 40,
+            "rad": 25,
+            "lift": 0,
+            "agl": 0,
+            "mov": 0,
+            "tl": 5
+
+        }
+            
+    }
 } 
