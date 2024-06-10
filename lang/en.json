@@ -1,0 +1,32 @@
+{
+    "blcr": {
+        "stats":
+        {
+            "str": {
+                "label": "Strenght",
+                "abbreviation": "STR"
+              },
+              "dex": {
+                "label": "Dexterity",
+                "abbreviation": "DEX"
+              },
+              "con": {
+                "label": "Constitution",
+                "abbreviation": "CON"
+        
+              },
+              "int": {
+                "label": "Intelligence",
+                "abbreviation": "INT"
+              },
+              "wis": {
+                "label": "Wisdom",
+                "abbreviation": "WIS"
+              },
+              "cha": {
+                "label": "Charisma",
+                "abbreviation": "CHA"
+              }
+        }
+    }
+}
