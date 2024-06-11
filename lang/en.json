@@ -27,6 +27,25 @@
                 "label": "Charisma",
                 "abbreviation": "CHA"
               }
+        },
+        "weapon":
+        {
+          "r1":"Range 1",
+          "r2":"Range 2",
+          "r3":"Range 3",
+          "r4":"Range 4",
+          "r5":"Range 5",
+          "r6":"Range 6",
+          "r7":"Range 7",
+          "r8":"Range 8",
+          "mn": "Malfunction Number",
+          "dmg": "Damage",
+          "bur": "Burst",
+          "full": "Full auto",
+          "q": "Ammo",
+          "wgt": "weight",
+          "cost": "cost"
+
         }
     }
 }

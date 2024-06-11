@@ -1,5 +1,30 @@
 export const blcr = {};
 
+blcr.wep={
+
+  range:
+  {
+    r1: "blcr.weapon.r1",
+    r2: "blcr.weapon.r2",
+    r3: "blcr.weapon.r3",
+    r4: "blcr.weapon.r4",
+    r5: "blcr.weapon.r5",
+    r6: "blcr.weapon.r6",
+    r7: "blcr.weapon.r7",
+    r8: "blcr.weapon.r8",
+  },
+  attack:
+  {
+    dmg: "blcr.weapon.dmg",
+    mn:"blcr.weapon.mn",
+    bur:"blcr.weapon.bur",
+    full:"blcr.weapon.full",
+    q:"blcr.weapon.q",
+    wgt:"blcr.weapon.wgt",
+    cost:"blcr.weapon.cost",
+  }
+}
+/*
 blcr.stat={
     str: {
         label: "blcr.stat.str.label",
@@ -26,3 +51,4 @@ blcr.stat={
         abbreviation: "blcr.stat.cha.abbreviation"
       },
 }
+      */
