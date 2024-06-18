@@ -1,51 +1,41 @@
 {
-    "blcr": {
-        "stats":
-        {
-            "str": {
-                "label": "Strenght",
-                "abbreviation": "STR"
-              },
-              "dex": {
-                "label": "Dexterity",
-                "abbreviation": "DEX"
-              },
-              "con": {
-                "label": "Constitution",
-                "abbreviation": "CON"
-        
-              },
-              "int": {
-                "label": "Intelligence",
-                "abbreviation": "INT"
-              },
-              "wis": {
-                "label": "Wisdom",
-                "abbreviation": "WIS"
-              },
-              "cha": {
-                "label": "Charisma",
-                "abbreviation": "CHA"
-              }
-        },
-        "weapon":
-        {
-          "r1":"Range 1",
-          "r2":"Range 2",
-          "r3":"Range 3",
-          "r4":"Range 4",
-          "r5":"Range 5",
-          "r6":"Range 6",
-          "r7":"Range 7",
-          "r8":"Range 8",
-          "mn": "Malfunction Number",
-          "dmg": "Damage",
-          "bur": "Burst",
-          "full": "Full auto",
-          "q": "Ammo",
-          "wgt": "weight",
-          "cost": "cost"
-
-        }
+  "BOILERPLATE": {
+    "Ability": {
+      "Str": { "long": "Strength", "abbr": "str" },
+      "Con": { "long": "Constitution", "abbr": "con" },
+      "Dex": { "long": "Dexterity", "abbr": "dex" },
+      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Wis": { "long": "Wisdom", "abbr": "wis" },
+      "Cha": { "long": "Charisma", "abbr": "cha" }
+    },
+    "SheetLabels": {
+      "Actor": "Boilerplate Actor Sheet",
+      "Item": "Boilerplate Item Sheet"
+    },
+    "Item": {
+      "Spell": {
+        "SpellLVL": "Level {level} Spells",
+        "AddLVL": "Add LVL {level}"
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
     }
+  },
+
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "item": "Item",
+      "feature": "Feature",
+      "spell": "Spell"
+    }
+  }
 }
