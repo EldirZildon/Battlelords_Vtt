@@ -1,6 +1,6 @@
-import BoilerplateDataModel from "./base-model.mjs";
+import BattlelordsDataModel from "./base-model.mjs";
 
-export default class BoilerplateActorBase extends BoilerplateDataModel {
+export default class BattlelordsActorBase extends BattlelordsDataModel {
 
   static defineSchema() {
     const fields = foundry.data.fields;

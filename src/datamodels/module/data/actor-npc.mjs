@@ -1,6 +1,6 @@
-import BoilerplateActorBase from "./base-actor.mjs";
+import BattlelordsActorBase from "./base-actor.mjs";
 
-export default class BoilerplateNPC extends BoilerplateActorBase {
+export default class BattlelordsNPC extends BattlelordsActorBase {
 
   static defineSchema() {
     const fields = foundry.data.fields;

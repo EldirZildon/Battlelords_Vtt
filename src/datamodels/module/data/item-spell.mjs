@@ -1,6 +1,6 @@
-import BoilerplateItemBase from "./base-item.mjs";
+import BattlelordsItemBase from "./base-item.mjs";
 
-export default class BoilerplateSpell extends BoilerplateItemBase {
+export default class BattlelordsSpell extends BattlelordsItemBase {
 
   static defineSchema() {
     const fields = foundry.data.fields;

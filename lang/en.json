@@ -1,5 +1,5 @@
 {
-  "BOILERPLATE": {
+  "BATTLELORDS": {
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },
@@ -9,8 +9,8 @@
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
     "SheetLabels": {
-      "Actor": "Boilerplate Actor Sheet",
-      "Item": "Boilerplate Item Sheet"
+      "Actor": "Battlelords Actor Sheet",
+      "Item": "Battlelords Item Sheet"
     },
     "Item": {
       "Spell": {

@@ -1,6 +1,6 @@
 {
   "id": "Battlelords_Vtt",
-  "title": "Boilerplate",
+  "title": "Battlelords_Vtt",
   "description": "The Boilerplate system for FoundryVTT!",
   "authors": [
     {
@@ -34,7 +34,7 @@
   "socket": false,
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/boilerplate/assets/anvil-impact.png",
+  "background": "systems/Battlelords_Vtt/assets/anvil-impact.png",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
