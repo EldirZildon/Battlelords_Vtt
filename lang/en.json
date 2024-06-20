@@ -4,7 +4,7 @@
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },
       "Dex": { "long": "Manual Dexterity", "abbr": "md" },
-      "Agl": {"long": "Agility", "abbr": "agl" },
+      "Agl": { "long": "Agility", "abbr": "agl" },
       "Int": { "long": "Intelligence", "abbr": "int" },
       "Cha": { "long": "Charisma", "abbr": "cha" },
       "Agg": { "long": "Aggression", "abbr": "agg" }
