@@ -53,7 +53,7 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell","armor"],
+    "types": ["item", "skill", "spell","armor"],
     "templates": {
       "base": {
         "description": ""
@@ -65,7 +65,7 @@
       "weight": 0,
       "formula": "(@str.mod) + ceil(@lvl / 2)"
     },
-    "feature": {
+    "skill": {
       "templates": ["base"]
     },
     "spell": {
