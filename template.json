@@ -8,7 +8,7 @@
           "min": 0,
           "max": 10
         },
-        "abs": {
+        "power": {
           "value": 0,
           "min": 0
         },
@@ -53,7 +53,7 @@
     }
   },
   "Item": {
-    "types": ["item", "skill", "spell","armor"],
+    "types": ["item", "skill", "spell","armor","weapon"],
     "templates": {
       "base": {
         "description": ""
@@ -75,7 +75,31 @@
     "armor":
     {
       "templates": ["base"],
-      "thr": 1
+      "thr": 1,
+      "absT":1,
+      "absL":1,
+      "absA":1,
+      "siT":1,
+      "siL":1,
+      "siA":1
+    },
+    "weapon":
+    {
+      "templates": ["base"],
+      "weptype":["APW","Laser","Omega"],
+      "r1":1,
+      "r2":1,
+      "r3":1,
+      "r4":1,
+      "r5":1,
+      "r6":1,
+      "r7":1,
+      "r8":1,
+      "dam": "1d4",
+      "mn": 99,
+      "bur": 0,
+      "full":0,
+      "tl":3
     }
   }
 }
