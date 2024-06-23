@@ -86,7 +86,7 @@
     "weapon":
     {
       "templates": ["base"],
-      "weptype":["APW","Laser","Omega"],
+      "weptype":"APW",
       "r1":1,
       "r2":1,
       "r3":1,

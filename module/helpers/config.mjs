@@ -24,3 +24,28 @@ BATTLELORDS.abilityAbbreviations = {
   cha: 'BATTLELORDS.Ability.Cha.abbr',
   agg: 'BATTLELORDS.Ability.Agg.abbr',
 };
+BATTLELORDS.weptypes={
+  none: 'BATTLELORDS.weptype.none',
+  APW: 'BATTLELORDS.weptype.APW',
+  laser: 'BATTLELORDS.weptype.laser',
+  melee: 'BATTLELORDS.weptype.melee',
+  omega: 'BATTLELORDS.weptype.omega',
+  glue: 'BATTLELORDS.weptype.glue',
+  metal: 'BATTLELORDS.weptype.metal'
+};
+BATTLELORDS.weprange={
+  r1: "rb1",
+  r2: "rb2",
+  r3: "rb3",
+  r4: "rb4",
+  r5: "rb5",
+  r6: "rb6",
+  r7: "rb7",
+  r8: "rb8",
+  dmg: "Damage",
+  bur: "burst",
+  full: "full",
+  mn: "malfunction"
+}
+
+

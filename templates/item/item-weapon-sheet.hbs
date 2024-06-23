@@ -5,3 +5,74 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </div>
   </header>
+  <div>
+    <table>
+      <tr>
+        <th>{{localize "Weapon Type"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r1"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r2"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r3"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r4"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r5"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r6"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r7"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.r8"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.dmg"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.mn"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.bur"}}</th>
+        <th>{{localize "BATTLELORDS.wepdata.full"}}</th>
+        <th>{{localize "tl"}}</th>
+      </tr>
+      <tr>
+        <td>
+          <select name = "data.weptypes">
+            {{#select data.weptypes}}
+            {{#each config.weptypes as |name type|}}
+            <option value = "{{type}}" >{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </td>
+        
+        <td>
+          <input name="data.r1" type ="text" value=" {{data.r1}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r2" type ="text" value=" {{data.r2}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r3" type ="text" value=" {{data.r3}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r4" type ="text" value=" {{data.r4}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r5" type ="text" value=" {{data.r5}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r6" type ="text" value=" {{data.r6}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.r7" type ="text" value=" {{data.r7}}" data-dtype = "Number">
+        </td>
+         <td>
+          <input name="data.r8" type ="text" value=" {{data.r8}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.damage" type ="text" value=" {{data.damage}}" data-dtype = "Number">
+        </td>        
+        <td>
+          <input name="data.mn" type ="text" value=" {{data.mn}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.bur" type ="text" value=" {{data.bur}}" data-dtype = "Number">
+        </td>
+        <td>
+          <input name="data.full" type ="text" value=" {{data.full}}" data-dtype = "Number">
+        </td>
+      </tr>
+    </table>
+    <textarea name="data.description">
+      {{data.description}}
+    </textarea>
+  </div>

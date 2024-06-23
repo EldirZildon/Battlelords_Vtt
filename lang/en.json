@@ -19,7 +19,33 @@
         "AddLVL": "Add LVL {level}"
       }
     },
-    "Effect": {
+    "weptype":
+    {
+      "none": "",
+      "APW": "APW",
+      "laser": "laser",
+      "melee": "melee",
+      "omega": "omega",
+      "glue": "glue gun",
+      "metal": "metalgun"
+    },
+    "wepdata":
+    {
+      "r1": "rb1",
+      "r2": "rb2",
+      "r3": "rb3",
+      "r4": "rb4",
+      "r5": "rb5",
+      "r6": "rb6",
+      "r7": "rb7",
+      "r8": "rb8",
+      "dmg": "Damage",
+      "bur": "burst",
+      "full": "full",
+      "mn": "malfunction"
+
+    },
+      "Effect": {
       "Source": "Source",
       "Toggle": "Toggle Effect",
       "Temporary": "Temporary Effects",
