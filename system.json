@@ -1,11 +1,15 @@
 {
   "id": "Battlelords_Vtt",
   "title": "Battlelords_Vtt",
-  "description": "The Boilerplate system for FoundryVTT!",
+  "description": "The Battlelords system for FoundryVTT!",
   "authors": [
     {
       "name": "Eldir_Zildon",
       "discord": "..."
+    },
+    {
+      "name": "Uncle_Ernie",
+      "url": "AWN.Support.ARM"
     }
 
   ],

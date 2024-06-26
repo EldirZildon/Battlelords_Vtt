@@ -49,7 +49,7 @@ Hooks.once('init', function () {
   CONFIG.Item.dataModels = {
     item: models.BattlelordsItem,
     feature: models.BattlelordsFeature,
-    spell: models.BattlelordsSpell
+    matrice: models.Battlelordsmatrice
   }
 
   // Active Effects are never copied to the Actor,

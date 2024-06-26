@@ -47,5 +47,16 @@ BATTLELORDS.weprange={
   full: "full",
   mn: "malfunction"
 }
+BATTLELORDS.armour={
+  absla: "abs left arm",
+  absra: "abs right arm",
+  absll: "abs left leg",
+  absrl: "abs right leg",
+  sila: "si left arm",
+  sira: "si right arm",
+  sill: "si left leg",
+  sirl: "si right leg",
+  thr: "threshold"
+}
 
 

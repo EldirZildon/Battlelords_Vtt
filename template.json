@@ -8,10 +8,13 @@
           "min": 0,
           "max": 10
         },
-        "power": {
+        "power points": {
           "value": 0,
           "min": 0
         },
+        "species":"human",
+        "rank": "private",
+        "position": "cannon fodder",
         "biography": ""
       }
     },
@@ -53,7 +56,7 @@
     }
   },
   "Item": {
-    "types": ["item", "skill", "spell","armor","weapon"],
+    "types": ["item", "skill", "matrice","armor","weapon"],
     "templates": {
       "base": {
         "description": ""
@@ -68,9 +71,9 @@
     "skill": {
       "templates": ["base"]
     },
-    "spell": {
+    "matrice": {
       "templates": ["base"],
-      "spellLevel": 1
+      "matriceLevel": 1
     },
     "armor":
     {

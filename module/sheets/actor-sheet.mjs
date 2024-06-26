@@ -105,7 +105,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const skills = [];
-    const spells = {
+    const matrices = {
       0: [],
       1: [],
       2: [],
@@ -129,10 +129,10 @@ export class BattlelordsActorSheet extends ActorSheet {
       else if (i.type === 'skill') {
         skills.push(i);
       }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
-          spells[i.system.spellLevel].push(i);
+      // Append to matrices.
+      else if (i.type === 'matrice') {
+        if (i.system.matriceLevel != undefined) {
+          matrices[i.system.matriceLevel].push(i);
         }
       }
     }
@@ -140,7 +140,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     // Assign and return
     context.gear = gear;
     context.skills = skills;
-    context.spells = spells;
+    context.matrices = matrices;
   }
 
   /* -------------------------------------------- */

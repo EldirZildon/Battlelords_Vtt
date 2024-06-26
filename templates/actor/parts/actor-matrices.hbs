@@ -1,22 +1,22 @@
 <ol class='items-list'>
-  {{#each spells as |spells spellLevel|}}
+  {{#each matrices as |matrices matriceLevel|}}
     <li class='item flexrow items-header'>
       <div class='item-name'>
-        {{localize 'BATTLELORDS.Item.Spell.SpellLVL' level=spellLevel}}
+        {{localize 'BATTLELORDS.Item.matrice.matriceLVL' level=matriceLevel}}
       </div>
       <div class='item-controls'>
         <a
           class='item-control item-create'
-          title='{{localize "DOCUMENT.Create" type='Spell'}}'
-          data-type='spell'
-          data-spell-level='{{spellLevel}}'
+          title='{{localize "DOCUMENT.Create" type='matrice'}}'
+          data-type='matrice'
+          data-matrice-level='{{matriceLevel}}'
         >
           <i class='fas fa-plus'></i>
-          {{localize 'BATTLELORDS.Item.Spell.AddLVL' level=spellLevel}}
+          {{localize 'BATTLELORDS.Item.matrice.AddLVL' level=matriceLevel}}
         </a>
       </div>
     </li>
-    {{#each spells as |item id|}}
+    {{#each matrices as |item id|}}
       <li class='item flexrow' data-item-id='{{item._id}}'>
         <div class='item-name flexrow'>
           <div class='item-image'>
@@ -32,13 +32,13 @@
         <div class='item-controls'>
           <a
             class='item-control item-edit'
-            title='{{localize "DOCUMENT.Edit" type='spell'}}'
+            title='{{localize "DOCUMENT.Edit" type='matrice'}}'
           >
             <i class='fas fa-edit'></i>
           </a>
           <a
             class='item-control item-delete'
-            title='{{localize "DOCUMENT.Delete" type='spell'}}'
+            title='{{localize "DOCUMENT.Delete" type='matrice'}}'
           >
             <i class='fas fa-trash'></i>
           </a>

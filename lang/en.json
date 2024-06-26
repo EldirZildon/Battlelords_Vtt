@@ -14,8 +14,8 @@
       "Item": "Battlelords Item Sheet"
     },
     "Item": {
-      "Spell": {
-        "SpellLVL": "Level {level} Spells",
+      "matrice": {
+        "matriceLVL": "Level {level} matrices",
         "AddLVL": "Add LVL {level}"
       }
     },
@@ -45,6 +45,20 @@
       "mn": "malfunction"
 
     },
+    "armour":
+    {
+      "absla": "abs left arm",
+      "absra": "abs right arm",
+      "absll": "abs left leg",
+      "absrl": "abs right leg",
+      "sila": "si left arm",
+      "sira": "si right arm",
+      "sill": "si left leg",
+      "sirl": "si right leg",
+      "thr": "threshold"
+
+      
+    },
       "Effect": {
       "Source": "Source",
       "Toggle": "Toggle Effect",
@@ -62,7 +76,7 @@
     "Item": {
       "item": "Item",
       "skill": "Skill",
-      "spell": "Spell"
+      "matrice": "matrice"
     }
   }
 }
