@@ -14,64 +14,65 @@
           placeholder='Name'
         /></h1>
     </div>
-  </header>
-    <div class"sidebar">
-      <header class='table-header'><th>{{localize "Combat Info"}}</th></header>
-        <table>
-            <tr>
-                <th>{{localize "species"}}</th>
-                <th><input name="system.species" type ="text" value="{{system.species}}"></th>
-                <th> {{localize "# of actions"}} </th>
-                <th> <input name="system.actions" type = "text" value "{{system.actions}}"data-dtype="Number">  </th>
-            </tr>
-            <tr>
-                <th>{{localize "size class"}}</th>
-                <th> <input name="system.sc" type ="text" value="{{system.sc}}" data-dtype="Number"> </th>
-                <th>{{localize "No. of bumps"}}</th>
-                <th> <input name="system.nob" type ="text" value=" {{system.nob}}" data-dtype="Number"> </th>
-            </tr>
-            <tr>
-                <th>{{localize "Berserk/Suicidal"}}</th>
-                <th> <input name="system.bs" type ="text" value="{{system.bs}}"> </th>
-                <th>{{localize "No. of bumps"}}</th>
-                <th> <input name="system.mod" type ="text" value="{{system.mod}}"> </th>
-            </tr>
-            <tr>
-                <th>{{localize "Rank"}}</th>
-                <th> <input name="system.rank" type ="text" value="{{system.rank}}"> </th>
-                <th>{{localize "Dodge"}}</th>
-                <th> <input name="system.dodge" type ="text" value="{{system.dodge}}"> </th>
-            </tr> 
-            <tr>
-                <th>{{localize "Posistion"}}</th>
-                <th> <input name="system.position" type ="text" value="{{system.position}}"> </th>
-                <th>{{localize "BP"}}</th>
-                <th> <input name="system.health" type ="text" value="{{system.health}}"> </th>
-            </tr> 
-            <tr>
-                <th>{{localize "Observation"}}</th>
-                <th> <input name="system.observe" type ="text" value="{{system.observe}}"> </th>
-                <th>{{localize "Death's door"}}</th>
-                <th> <input name="system.dd" type ="text" value="{{system.dd}}"> </th>
-            </tr> 
-            <tr>
-                <th>{{localize "Threshold Rating"}}</th>
-                <th> <input name="system.TR" type ="text" value="{{system.TR}}"> </th>
-                <th>{{localize "Movement"}}</th>
-                <th> <input name="system.mov" type ="text" value="{{system.mov}}"> </th>
-            </tr> 
-        </table>
-        <div class"sidbar2">
-           <header class='table-header'><th>{{localize "vitals"}}</th></header>
-            <div class="abilities flexcol">
+  
+    <nav class="sheet-tabs tabs" data-group="primary">
+    {{!-- Default tab is specified in actor-sheet.mjs --}}
+    
+    <a class="item" data-tab="skills">Skills</a>
+    <a class="item" data-tab="combat_info">Combat_Info</a>
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="stats">Stats</a>
+    <a class="item" data-tab="items">Items</a>
+    <a class="item" data-tab="weapons">Weapon</a>
+    <a class="item" data-tab="matrices">matrices</a>
+    <a class="item" data-tab="effects">Effects</a>
+  </nav>
+  <section class="sheet-body">
+    <div class="tab skills" data-group="primary" data-tab="skills">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-skills.hbs"}}
+    </div> <div class="tab skills" data-group="primary" data-tab="combat_info">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-combat.hbs"}}
+    </div>
+    <div class="tab items" data-group="primary" data-tab="items">
+       {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-items.hbs"}}
+    </div>
+
+    {{!-- Owned matrices Tab --}}
+    <div class="tab matrices" data-group="primary" data-tab="matrices">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-matrices.hbs"}}
+    </div>
+
+    {{!-- Active Effects Tab --}}
+    <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-effects.hbs"}}
+    </div><div class="tab effects flexcol" data-group="primary" data-tab="weapons">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs"}}
+    </div>
+    <div class="tab skills" data-group="primary" data-tab="stats">
+      <section class="grid grid-3col">
+        <aside class="sidebar">
+
+          {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+          use both the "grid" and "grid-Ncol" class where "N" can be any number
+          from 1 to 12 and will create that number of columns.  --}}
+          <div class="abilities flexcol">
             {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
-              <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="0-d100+@abilities.{{key}}.mod" data-label="{{localize (lookup @root.config.abilities key)}}">{{localize (lookup @root.config.abilities key)}}</label>
+              <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="@abilities.{{key}}.mod - d100" data-label="{{localize (lookup @root.config.abilities key)}}">{{localize (lookup @root.config.abilities key)}}</label>
               <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
-              <span class="ability-mod rollable" data-roll="0-d100+@abilities.{{key}}.mod" data-label="{{localize (lookup @root.config.abilities key)}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+              <span class="ability-mod rollable" data-roll="@abilities.{{key}}.mod - d100" data-label="{{localize (lookup @root.config.abilities key)}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
             </div>
             {{/each}}
           </div>
-        </div>
-    </div>
+        </aside>
+
+        {{!-- For the main skills list, span the right two columns --}}
+        <section class="main grid-span-2">
+          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
+          {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-vitals.hbs"}}
+        </section>
+
+      </section>
+      
+  </section>
 </form>
