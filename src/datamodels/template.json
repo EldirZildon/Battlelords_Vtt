@@ -3,6 +3,6 @@
     "types": ["character", "npc"]
   },
   "Item": {
-    "types": ["item", "feature", "matrice","armor","weapon"]
+    "types": ["item", "skill", "matrice","armor","weapon"]
   }
 }

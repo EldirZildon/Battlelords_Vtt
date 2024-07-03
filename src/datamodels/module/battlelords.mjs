@@ -48,8 +48,10 @@ Hooks.once('init', function () {
   CONFIG.Item.documentClass = BattlelordsItem;
   CONFIG.Item.dataModels = {
     item: models.BattlelordsItem,
-    feature: models.BattlelordsFeature,
-    matrice: models.Battlelordsmatrice
+    skill: models.BattlelordsSkill,
+    matrice: models.Battlelordsmatrice,
+    weapon: models.Battlelordsweapon,
+    armor: models.Battlelordsarmor,
   }
 
   // Active Effects are never copied to the Actor,
