@@ -76,7 +76,9 @@
     "Item": {
       "item": "Item",
       "skill": "Skill",
-      "matrice": "matrice"
+      "matrice": "Matrice",
+      "weapon": "Weapon",
+      "armor": "Armor"
     }
   }
 }
