@@ -18,7 +18,7 @@ export class BattlelordsActorSheet extends ActorSheet {
         {
           navSelector: '.sheet-tabs',
           contentSelector: '.sheet-body',
-          initial: 'skill',
+          initial: 'skills',
         },
       ],
     });
@@ -40,7 +40,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     const context = super.getData();
 
     // Use a safe clone of the actor data for further operations.
-    const actorData = this.document.toPlainObject();
+    const actorData = this.document.toObject(false);
 
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = actorData.system;
@@ -48,7 +48,7 @@ export class BattlelordsActorSheet extends ActorSheet {
 
     // Adding a pointer to CONFIG.BATTLELORDS
     context.config = CONFIG.BATTLELORDS;
-    
+
     // Prepare character data and items.
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -104,9 +104,9 @@ export class BattlelordsActorSheet extends ActorSheet {
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
+    const skills = [];
     const weapon = [];
-    const armor = [];
-    const skill = [];
+    const armor =[];
     const matrices = {
       0: [],
       1: [],
@@ -127,15 +127,15 @@ export class BattlelordsActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to skill.
+      // Append to skills.
       else if (i.type === 'skill') {
-        skill.push(i);
+        skills.push(i);
       }
-      else if (i.type === 'weapons'){
-        weapon.push(i);
-      }
-      else if (i.type === 'armor'){
+      else if (i.type === 'armor') {
         armor.push(i);
+      }
+      else if (i.type === ' weapon') {
+        weapon.push(i);
       }
       // Append to matrices.
       else if (i.type === 'matrice') {
@@ -147,8 +147,10 @@ export class BattlelordsActorSheet extends ActorSheet {
 
     // Assign and return
     context.gear = gear;
-    context.skill = skill;
+    context.skills = skills;
     context.matrices = matrices;
+    context.weapon =weapon;
+    context.armor=armor;
   }
 
   /* -------------------------------------------- */
