@@ -6,13 +6,13 @@
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
     // Actor partials.
-    'systems/Battlelords_Vtt/templates/actor/parts/actor-skills.hbs',
+    'systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-items.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-matrices.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-effects.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-combat.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-vitals.hbs',
-    'systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs',
+    'systems/Battlelords_Vtt/templates/actor/parts/actor-wep2s.hbs',
     // Item partials
     'systems/Battlelords_Vtt/templates/item/parts/item-effects.hbs',
   ]);

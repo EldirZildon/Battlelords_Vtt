@@ -18,7 +18,7 @@ export class BattlelordsActorSheet extends ActorSheet {
         {
           navSelector: '.sheet-tabs',
           contentSelector: '.sheet-body',
-          initial: 'skills',
+          initial: 'weapons',
         },
       ],
     });
@@ -104,7 +104,7 @@ export class BattlelordsActorSheet extends ActorSheet {
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
-    const skills = [];
+    const weapons = [];
     const weapon = [];
     const armor =[];
     const matrices = {
@@ -127,9 +127,9 @@ export class BattlelordsActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to skills.
-      else if (i.type === 'skill') {
-        skills.push(i);
+      // Append to weapons.
+      else if (i.type === 'weapon') {
+        weapons.push(i);
       }
       else if (i.type === 'armor') {
         armor.push(i);
@@ -147,7 +147,7 @@ export class BattlelordsActorSheet extends ActorSheet {
 
     // Assign and return
     context.gear = gear;
-    context.skills = skills;
+    context.weapons = weapons;
     context.matrices = matrices;
     context.weapon =weapon;
     context.armor=armor;

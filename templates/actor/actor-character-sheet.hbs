@@ -18,19 +18,19 @@
     <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     
-    <a class="item" data-tab="skills">Skills</a>
+    <a class="item" data-tab="weapons">Weapons</a>
     <a class="item" data-tab="combat_info">Combat_Info</a>
     <a class="item" data-tab="description">Description</a>
     <a class="item" data-tab="stats">Stats</a>
     <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="weapon">Weapon</a>
+    <a class="item" data-tab="wep2">wep2</a>
     <a class="item" data-tab="matrices">matrices</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
   <section class="sheet-body">
-    <div class="tab skills" data-group="primary" data-tab="skills">
-      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-skills.hbs"}}
-    </div> <div class="tab skills" data-group="primary" data-tab="combat_info">
+    <div class="tab weapons" data-group="primary" data-tab="weapons">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs"}}
+    </div> <div class="tab weapons" data-group="primary" data-tab="combat_info">
       {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-combat.hbs"}}
     </div>
     <div class="tab items" data-group="primary" data-tab="items">
@@ -45,8 +45,8 @@
     {{!-- Active Effects Tab --}}
     <div class="tab effects flexcol" data-group="primary" data-tab="effects">
       {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-effects.hbs"}}
-    </div><div class="tab effects flexcol" data-group="primary" data-tab="weapon">
-      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs"}}
+    </div><div class="tab effects flexcol" data-group="primary" data-tab="wep2">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-wep2s.hbs"}}
     </div>
     <div class="tab stats" data-group="primary" data-tab="stats">
       <section class="grid grid-3col">
@@ -66,7 +66,7 @@
           </div>
         </aside>
 
-        {{!-- For the main skills list, span the right two columns --}}
+        {{!-- For the main weapons list, span the right two columns --}}
         <section class="main grid-span-2">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
           {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-vitals.hbs"}}

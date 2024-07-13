@@ -48,9 +48,9 @@ Hooks.once('init', function () {
   CONFIG.Item.documentClass = BattlelordsItem;
   CONFIG.Item.dataModels = {
     item: models.BattlelordsItem,
-    skill: models.BattlelordsSkill,
+    weapon: models.BattlelordsWeapon,
     matrice: models.Battlelordsmatrice,
-    weapon: models.Battlelordsweapon,
+    wep2: models.Battlelordswep2,
     armor: models.Battlelordsarmor,
   }
 

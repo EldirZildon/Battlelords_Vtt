@@ -31,7 +31,7 @@ export class BattlelordsItemSheet extends ItemSheet {
     // return `${path}/item-sheet.hbs`;
 
     // Alternatively, you could use the following return statement to do a
-    // unique item sheet by type, like `weapon-sheet.hbs`.
+    // unique item sheet by type, like `wep2-sheet.hbs`.
     return `${path}/item-${this.item.type}-sheet.hbs`;
   }
 
