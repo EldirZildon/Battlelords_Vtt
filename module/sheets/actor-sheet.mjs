@@ -105,7 +105,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const weapons = [];
-    const weapon = [];
+    
     const armor =[];
     const matrices = {
       0: [],
@@ -134,9 +134,7 @@ export class BattlelordsActorSheet extends ActorSheet {
       else if (i.type === 'armor') {
         armor.push(i);
       }
-      else if (i.type === ' weapon') {
-        weapon.push(i);
-      }
+
       // Append to matrices.
       else if (i.type === 'matrice') {
         if (i.system.matriceLevel != undefined) {
@@ -149,7 +147,6 @@ export class BattlelordsActorSheet extends ActorSheet {
     context.gear = gear;
     context.weapons = weapons;
     context.matrices = matrices;
-    context.weapon =weapon;
     context.armor=armor;
   }
 

@@ -51,7 +51,7 @@ Hooks.once('init', function () {
     weapon: models.BattlelordsWeapon,
     matrice: models.Battlelordsmatrice,
     wep2: models.Battlelordswep2,
-    armor: models.Battlelordsarmor,
+    armor: models.BattlelordsArmor,
   }
 
   // Active Effects are never copied to the Actor,

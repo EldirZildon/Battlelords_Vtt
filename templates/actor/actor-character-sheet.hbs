@@ -19,6 +19,7 @@
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     
     <a class="item" data-tab="weapons">Weapons</a>
+    <a class="item" data-tab="armors">Armors</a>
     <a class="item" data-tab="combat_info">Combat_Info</a>
     <a class="item" data-tab="description">Description</a>
     <a class="item" data-tab="stats">Stats</a>
@@ -30,7 +31,10 @@
   <section class="sheet-body">
     <div class="tab weapons" data-group="primary" data-tab="weapons">
       {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs"}}
-    </div> <div class="tab weapons" data-group="primary" data-tab="combat_info">
+    </div>
+    <div class="tab armors" data-group="primary" data-tab="armors">
+      {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-armor.hbs"}}
+    </div> <div class="tab combat" data-group="primary" data-tab="combat_info">
       {{> "systems/Battlelords_Vtt/templates/actor/parts/actor-combat.hbs"}}
     </div>
     <div class="tab items" data-group="primary" data-tab="items">

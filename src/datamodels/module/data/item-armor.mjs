@@ -1,3 +1,3 @@
 import BattlelordsItemBase from "./base-item.mjs";
 
-export default class Battlelordsarmor extends BattlelordsItemBase {}
+export default class BattlelordsArmor extends BattlelordsItemBase {}
