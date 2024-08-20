@@ -13,10 +13,10 @@
     }
 
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
+  "bugs": "",
   "changelog": "CHANGELOG.md",
 
   "version": "1.0.0",
@@ -38,7 +38,7 @@
   "socket": false,
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/Battlelords_Vtt/assets/anvil-impact.png",
+  "background": "systems/Battlelords_Vtt/assets/blbr.jpg",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "health",

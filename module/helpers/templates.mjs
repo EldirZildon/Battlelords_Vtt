@@ -13,7 +13,7 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/Battlelords_Vtt/templates/actor/parts/actor-effects.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-combat.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-vitals.hbs',
-    'systems/Battlelords_Vtt/templates/actor/parts/actor-wep2s.hbs',
+    'systems/Battlelords_Vtt/templates/actor/parts/actor-skills.hbs',
     // Item partials
     'systems/Battlelords_Vtt/templates/item/parts/item-effects.hbs',
   ]);

@@ -50,7 +50,7 @@ Hooks.once('init', function () {
     item: models.BattlelordsItem,
     weapon: models.BattlelordsWeapon,
     matrice: models.Battlelordsmatrice,
-    wep2: models.Battlelordswep2,
+    skill: models.Battlelordsskill,
     armor: models.BattlelordsArmor,
   }
 

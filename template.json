@@ -101,6 +101,7 @@
       "r7":0,
       "r8":0,
       "dam": "1d4",
+      "damtype":"none",
       "mn": 99,
       "bur": 0,
       "full":0,
