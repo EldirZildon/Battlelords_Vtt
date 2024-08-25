@@ -12,6 +12,7 @@
           "value": 0,
           "min": 0
         },
+        "actions": 2,
         "species":"human",
         "rank": "private",
         "position": "cannon fodder",

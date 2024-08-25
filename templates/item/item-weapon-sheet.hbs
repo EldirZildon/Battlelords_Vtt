@@ -23,10 +23,10 @@
         <th>{{localize "BATTLELORDS.wepdata.full"}}</tr>
       <tr>
         <td>
-          <select name = "system.weptypes">
+          <select name ="system.weptypes">
             {{#select system.weptypes}}
             {{#each config.weptypes as |name type|}}
-            <option value = "{{type}}" >{{name}}</option>
+            <option value ="{{type}}">{{name}}</option>
             {{/each}}
             {{/select}}
           </select>
@@ -70,7 +70,5 @@
         </td>
       </tr>
     </table>
-    <textarea name="system.description">
-      {{system.description}}
-    </textarea>
+    <textarea name="system.desciption">{{system.desciption}}</textarea>
   </div>
