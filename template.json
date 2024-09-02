@@ -72,7 +72,11 @@
       "formula": "(@str.mod) + ceil(@lvl / 2)"
     },
     "skill": {
-      "templates": ["base"]
+      "templates": ["base"],
+      "skilltype":"Con",
+      "skilllevel":0,
+      "skillcheck":50,
+      "skillcost":1
     },
     "matrice": {
       "templates": ["base"],

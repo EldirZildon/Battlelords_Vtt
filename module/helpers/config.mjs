@@ -24,6 +24,15 @@ BATTLELORDS.abilityAbbreviations = {
   cha: 'BATTLELORDS.Ability.Cha.abbr',
   agg: 'BATTLELORDS.Ability.Agg.abbr',
 };
+BATTLELORDS.skillTypes={
+  str: 'BATTLELORDS.Ability.Str.long',
+  dex: 'BATTLELORDS.Ability.Dex.long',
+  agl: 'BATTLELORDS.Ability.Agl.long',
+  con: 'BATTLELORDS.Ability.Con.long',
+  int: 'BATTLELORDS.Ability.Int.long',
+  cha: 'BATTLELORDS.Ability.Cha.long',
+  agg: 'BATTLELORDS.Ability.Agg.long',
+}
 BATTLELORDS.weptypes={
   none: 'BATTLELORDS.weptype.none',
   APW: 'BATTLELORDS.weptype.APW',

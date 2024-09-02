@@ -5,32 +5,31 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </div>
   </header>
+  <div>
+    <table>
+      <tr>
+        <th>{{localize "Skill Type"}}</th>
+        <th>{{localize "Skill Level"}}</th>
+        <th>{{localize "Skill Check"}}</th>
+        <th>{{localize "Skill Cost"}}</th>
+      </tr>
+      <tr>
+        <th>
+          <select name ="system.skillType">
+            {{#select system.skillType}}
+            {{#each config.skillType as |name skill|}}
+            <option value ="{{skill}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </th>
+        <th><input name="system.skilllevel" type ="text" value="{{system.skilllevel}}" data-dtype = "Number"></th>
+        <th><input name="system.skillcheck" type ="text" value="{{system.skillcheck}}" data-dtype = "Number"></th>
+        <th><input name="system.skillcost" type ="text" value="{{system.skillcost}}" data-dtype = "Number"></th>
+      </tr>
+    </table>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="effects">Effects</a>
-  </nav>
+  </div>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
-      {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
-
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
-    </div>
-
-    {{!-- Effects Tab --}}
-    <div class="tab effects" data-group="primary" data-tab="effects">
-      {{> "systems/Battlelords_Vtt/templates/item/parts/item-effects.hbs"}}
-    </div>
-  </section>
 
 </form>
