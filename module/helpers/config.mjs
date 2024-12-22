@@ -43,26 +43,31 @@ BATTLELORDS.weptypes={
   metal: 'BATTLELORDS.weptype.metal'
 };
 BATTLELORDS.weprange={
-  r1: "rb1",
-  r2: "rb2",
-  r3: "rb3",
-  r4: "rb4",
-  r5: "rb5",
-  r6: "rb6",
-  r7: "rb7",
-  r8: "rb8",
+  r1: "RB1",
+  r2: "RB2",
+  r3: "RB3",
+  r4: "RB4",
+  r5: "RB5",
+  r6: "RB6",
+  r7: "RB7",
+  r8: "RB8",
   dmg: "Damage",
-  bur: "burst",
-  full: "full",
-  mn: "malfunction"
+  bur: "Burst",
+  full: "Full",
+  mn: "Malfunction"
 }
 BATTLELORDS.armour={
+  helmet: "",
+  abhel: "abs helmet",
+  sihel: "si helmet",
   absla: "abs left arm",
   absra: "abs right arm",
+  abtor: "abs torso",
   absll: "abs left leg",
   absrl: "abs right leg",
   sila: "si left arm",
   sira: "si right arm",
+  sitor: "si torso",
   sill: "si left leg",
   sirl: "si right leg",
   thr: "threshold"
