@@ -59,7 +59,7 @@
     }
   },
   "Item": {
-    "types": ["item", "skill", "matrice","armor","weapon"],
+    "types": ["item", "skill", "matrice","armor","helmet","weapon"],
     "templates": {
       "base": {
         "description": ""
@@ -92,6 +92,13 @@
       "siT":1,
       "siL":1,
       "siA":1
+    },
+    "helmet":
+    {
+      "templates": ["base"],
+      "thr": 1,
+      "abs":1,
+      "si":1
     },
     "weapon":
     {

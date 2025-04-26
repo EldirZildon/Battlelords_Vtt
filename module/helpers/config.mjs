@@ -58,8 +58,9 @@ BATTLELORDS.weprange={
 }
 BATTLELORDS.armour={
   helmet: "",
-  abhel: "abs helmet",
-  sihel: "si helmet",
+  helmthr: "thr helmet",
+  helmab: "abs helmet",
+  helmsi: "si helmet",
   absla: "abs left arm",
   absra: "abs right arm",
   abtor: "abs torso",

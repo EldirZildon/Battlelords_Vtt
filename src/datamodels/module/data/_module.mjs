@@ -10,3 +10,4 @@ export {default as BattlelordsWeapon} from "./item-weapon.mjs";
 export {default as Battlelordsmatrice} from "./item-matrice.mjs";
 export {default as BattlelordsSkill} from "./item-skill.mjs";
 export {default as BattlelordsArmor} from "./item-armor.mjs";
+export {default as BattlelordsHelmet} from "./item-helmet.mjs";
