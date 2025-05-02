@@ -107,6 +107,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     const weapons = [];
     const skill = [];
     const armor =[];
+    const helmet =[];
     const matrices = {
       0: [],
       1: [],
@@ -134,6 +135,9 @@ export class BattlelordsActorSheet extends ActorSheet {
       else if (i.type === 'armor') {
         armor.push(i);
       }
+      else if (i.type === 'helmet') {
+        helmet.push(i);
+      }
       else if (i.type === 'skill'){
         skill.push(i);
       }
@@ -151,6 +155,7 @@ export class BattlelordsActorSheet extends ActorSheet {
     context.weapons = weapons;
     context.matrices = matrices;
     context.armor=armor;
+    context.helmet=helmet;
   }
 
   /* -------------------------------------------- */

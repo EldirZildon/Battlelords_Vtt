@@ -8,6 +8,7 @@ export const preloadHandlebarsTemplates = async function () {
     // Actor partials.
     'systems/Battlelords_Vtt/templates/actor/parts/actor-weapons.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-armor.hbs',
+    'systems/Battlelords_Vtt/templates/actor/parts/actor-helmet.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-items.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-matrices.hbs',
     'systems/Battlelords_Vtt/templates/actor/parts/actor-effects.hbs',
