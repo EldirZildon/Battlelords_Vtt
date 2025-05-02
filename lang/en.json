@@ -5,11 +5,12 @@
       "Con": { "long": "Constitution", "abbr": "con" },
       "Dex": { "long": "Manual Dexterity", "abbr": "md" },
       "Agl": { "long": "Agility", "abbr": "agl" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Int": { "long": "Intuition", "abbr": "int" },
       "Cha": { "long": "Charisma", "abbr": "cha" },
-      "Agg": { "long": "Aggression", "abbr": "agg" }
+      "Agg": { "long": "Aggression", "abbr": "agg" },
+      "IQ": {"long": "Intelligence", "abbr": "iq" }
     },
-    "SheetLabels": {
+    "SheetLabels": { 
       "Actor": "Battlelords Actor Sheet",
       "Item": "Battlelords Item Sheet"
     },
@@ -57,8 +58,6 @@
       "sill": "si left leg",
       "sirl": "si right leg",
       "thr": "threshold"
-
-      
     },
       "Effect": {
       "Source": "Source",

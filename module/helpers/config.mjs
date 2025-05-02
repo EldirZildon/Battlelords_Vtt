@@ -12,7 +12,7 @@ BATTLELORDS.abilities = {
   int: 'BATTLELORDS.Ability.Int.long',
   cha: 'BATTLELORDS.Ability.Cha.long',
   agg: 'BATTLELORDS.Ability.Agg.long',
-
+  iq: 'BATTLELORDS.Ability.IQ.long',
 };
 
 BATTLELORDS.abilityAbbreviations = {
@@ -34,13 +34,13 @@ BATTLELORDS.skillTypes={
   agg: 'BATTLELORDS.Ability.Agg.long',
 }
 BATTLELORDS.weptypes={
-  none: 'BATTLELORDS.weptype.none',
-  APW: 'BATTLELORDS.weptype.APW',
-  laser: 'BATTLELORDS.weptype.laser',
-  melee: 'BATTLELORDS.weptype.melee',
-  omega: 'BATTLELORDS.weptype.omega',
-  glue: 'BATTLELORDS.weptype.glue',
-  metal: 'BATTLELORDS.weptype.metal'
+  none: 'none',//'BATTLELORDS.weptype.none',
+  APW: /*'BATTLELORDS.weptype.*/'APW',
+  laser: /*'BATTLELORDS.weptype.*/'laser',
+  melee: /*'BATTLELORDS.weptype.*/'melee',
+  omega: /*'BATTLELORDS.weptype.*/'omega',
+  glue: /*'BATTLELORDS.weptype.*/'glue',
+  metal: /*'BATTLELORDS.weptype.*/'metal'
 };
 BATTLELORDS.weprange={
   r1: "RB1",
