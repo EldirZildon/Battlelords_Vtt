@@ -1,4 +1,11 @@
 <ol class='items-list'>
+  <table>
+    <tr>
+      <th>{{localize "Power Points"}}</th>
+      <th><input name="system.pp" type ="text" value="{{system.pp}}" data-dtype = "Number"></th>
+      </tr>
+  </table>
+  
   {{#each matrices as |matrices matriceLevel|}}
     <li class='item flexrow items-header'>
       <div class='item-name'>

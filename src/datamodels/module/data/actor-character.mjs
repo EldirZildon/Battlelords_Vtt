@@ -27,7 +27,7 @@ export default class BattlelordsCharacter extends BattlelordsActorBase {
   prepareDerivedData() {
     // Loop through ability scores, and add their modifiers to our sheet output.
     for (const key in this.abilities) {
-      // Calculate the modifier using d20 rules.
+      // Calculate the modifier using d100 rules.
       this.abilities[key].mod = Math.floor((this.abilities[key].value) / 2);
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.BATTLELORDS.abilities[key]) ?? key;

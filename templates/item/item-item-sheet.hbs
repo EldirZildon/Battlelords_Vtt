@@ -47,7 +47,7 @@
 
     {{! Description Tab }}
     <div class='tab' data-group='primary' data-tab='description'>
-      {{! Editors must receive enriched text data from getData to properly handle rolls }}
+      {{!{{! Editors must receive enriched text data from getData to properly handle rolls }}
       {{editor
         enrichedDescription
         target='system.description'
@@ -55,6 +55,7 @@
         button=true
         editable=editable
       }}
+      <textarea name="system.desciption">{{system.desciption}}</textarea>
     </div>
 
     {{! Attributes Tab }}
